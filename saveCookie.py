@@ -48,7 +48,7 @@ if __name__ == '__main__':
     if(os.path.exists('xuexi.cookie')):
         print("cookie存在！")
         read_cookie()    #读cookie
-        print("读完cookie，打开首页")
+        print("读完cookie，打开首页!")
     else:
         print("cookie不存在，进入登录页面！")
         login_sim()     #模拟登录
