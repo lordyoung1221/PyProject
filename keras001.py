@@ -11,4 +11,5 @@ img_rows,img_cols=28,28
 
 (trainX,trainY),(testX,testY)=mnist.load_data()
 
-
+if K._image_data_format()=='channels_first':
+    trainX=trainX.reshape(trainX.shape[0],1,img_rows,img_cols)
